@@ -26,3 +26,6 @@ class BaseType:
                     attribute = await attribute.all()
 
                 filtered_dict[f.name] = attribute
+
+        logger.info(filtered_dict)
+        return cls(**filtered_dict)

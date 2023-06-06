@@ -13,7 +13,7 @@ class Query:
 
 @strawberry.type
 class Mutation:
-    from app.strawberry.functions.user import create_user
+    from app.strawberry.functions.user import create_user, update_user, delete_user
 
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)
