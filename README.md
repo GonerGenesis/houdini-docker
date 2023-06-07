@@ -14,7 +14,7 @@ graphiql interface: http://0.0.0.0:5001/graphql
 frontend: http://localhost:5174/
 
 # errors
-houdini can't find 0.0.0.0 or localhost. Although it is possible to ping (docker compose exec frontend ping 0.0.0.0:5001) the graphql backend from out the frontend docker container
+houdini can't find 0.0.0.0 or localhost. Although it is possible to ping (docker compose exec frontend ping 0.0.0.0:5001) the graphql backend from the frontend docker container. That kind of problem didn't appeared with urql before.
 
 # workaround 
 running the frontend directly on the localhost works like a charm
