@@ -7,6 +7,8 @@ services:
         INSTALL_DEV: ${INSTALL_DEV-true}
     env_file:
       - .env
+    expose:
+      - 5001
     ports:
       - 5001:5001
     volumes:
@@ -23,6 +25,8 @@ services:
       ports:
         - 5174:5174
       command: yarn dev --host 0.0.0.0 --port 5174
+      depends_on:
+        - backend
 
   test_db:
     image: postgres

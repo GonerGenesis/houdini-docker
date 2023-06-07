@@ -1,0 +1,6 @@
+query UserInfo {
+    getUser(id: 1) {
+        id
+        username
+    }
+}
