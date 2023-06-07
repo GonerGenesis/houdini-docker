@@ -5,7 +5,7 @@ export default new HoudiniClient({
     url: "http://0.0.0.0:5001/graphql",
     plugins: [
         subscription(() => createClient({
-          url: 'ws://localhost:5000/graphql'
+          url: 'ws://localhost:5001/graphql'
         }))
       ]
 
