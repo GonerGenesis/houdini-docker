@@ -1,0 +1,28 @@
+type MsgType {
+  id: Int
+  msg: String!
+  type: String
+}
+
+type Mutation {
+  createUser(user: UserInput!): UserType!
+  deleteUser(id: Int!): MsgType!
+  updateUser(user: UserUpdate!, userId: Int!): UserType!
+}
+
+type Query {
+  getUser(id: Int!): UserType!
+}
+
+input UserInput {
+  username: String!
+}
+
+type UserType {
+  id: Int!
+  username: String!
+}
+
+input UserUpdate {
+  username: String = null
+}
