@@ -19,10 +19,10 @@ class Settings(BaseSettings):
     SECRET_KEY: str = os.environ.get("SECRET_KEY")
 
 
-
 def get_settings() -> Settings:
     log.info("Loading config settings from the environment...")
     return Settings()
+
 
 TORTOISE_ORM = {
     "connections": {
