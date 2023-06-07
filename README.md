@@ -7,7 +7,7 @@ frontend: [SvelteKit](https://github.com/sveltejs/kit), [Houdini](https://github
 docker compose installation
 
 # install
-run `docker compose up -d` in top project top directory
+run `docker compose up -d` in project top directory
 
 # access
 graphiql interface: http://0.0.0.0:5001/graphql
