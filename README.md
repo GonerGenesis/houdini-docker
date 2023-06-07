@@ -7,11 +7,11 @@ frontend: [SvelteKit](https://github.com/sveltejs/kit), [Houdini](https://github
 docker compose installation
 
 # install
-run docker compose up -d in top project top directory
+run `docker compose up -d` in top project top directory
 
-# running
+# access
 graphiql interface: http://0.0.0.0:5001/graphql
 frontend: http://localhost:5174/
 
 # errors
-the houdini watcher produces `Couldn't pull your latest schema: request to http://localhost:5001/graphql failed, reason: connect ECONNREFUSED 127.0.0.1:5001`
+houdini can't find 0.0.0.0 or localhost. Although it is possible to ping (docker compose exec frontend ping 0.0.0.0:5001) the graphql backend from out the frontend docker container
