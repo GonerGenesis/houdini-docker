@@ -11,8 +11,7 @@
         "strict": true,
         "rootDirs": [
             ".",
-            "./.svelte-kit/types",
-            "./$houdini/types"
+            "./.svelte-kit/types"
         ]
     }
 }
