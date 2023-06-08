@@ -1,7 +1,7 @@
-# urql-docker
+# houdini-docker
 simple, quick and dirty setup
 backend: [FastApi](https://github.com/tiangolo/fastapi), PostgreSQL, [TortoiseORM](https://github.com/tortoise/tortoise-orm), [strawberry](https://github.com/strawberry-graphql/strawberry)
-frontend: [SvelteKit](https://github.com/sveltejs/kit), [urql](https://github.com/urql-graphql/urql))
+frontend: [SvelteKit](https://github.com/sveltejs/kit), [houdini](https://github.com/HoudiniGraphQL/houdini)
 
 # prerequisites
 docker compose installation
